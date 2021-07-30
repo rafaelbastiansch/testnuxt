@@ -1,0 +1,14 @@
+name: pr-validate
+on:
+  pull_request_target:
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+    steps:
+    - uses: actions/labeler@v3
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
