@@ -9,6 +9,6 @@ jobs:
       matrix:
         node-version: [12.x]
     steps:
-    - uses: rafaelbastiansch/labeler@v0.0.1
+    - uses: rafaelbastiansch/labeler@v0.0.2
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
