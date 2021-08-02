@@ -9,12 +9,6 @@ jobs:
       matrix:
         node-version: [12.x]
     steps:
-    - uses: actions/labeler@v3
+    - uses: rafaelbastiansch/labeler@v0.0.1
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
-  pr-labeler:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: TimonVS/pr-labeler-action@v3
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
