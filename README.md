@@ -1,4 +1,4 @@
-# testnuxt-Prr
+# testnuxt
 
 ## Build Setup
 
