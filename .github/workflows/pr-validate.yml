@@ -3,18 +3,12 @@ on:
   pull_request_target:
 
 jobs:
-  triage:
+  labeler:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [12.x]
     steps:
-    - uses: actions/labeler@v3
+    - uses: rafaelbastiansch/labeler@v0.0.4
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
-  pr-labeler:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: TimonVS/pr-labeler-action@v3
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,3 +1,7 @@
-# Add 'test' label to any change to *.spec.js files within the source dir
-test:
-- test/*.spec.js
+files:
+  - tested:
+    - any: ['test/*.spec.js']
+
+branches:
+  - bug:
+    - fix/*
