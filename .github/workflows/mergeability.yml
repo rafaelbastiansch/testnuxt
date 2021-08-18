@@ -9,3 +9,9 @@ jobs:
     - uses: rafaelbastiansch/mergeability-action@1.0.1
       with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
+  afterteste:
+    needs: [teste]
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install
+      run: yarn install
