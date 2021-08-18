@@ -10,7 +10,7 @@ jobs:
         node-version: [12.x]
     steps:
     - name: Break action
-      run: yarn break
+      run: yarn breakaction
     - uses: rafaelbastiansch/labeler@v0.0.4
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
