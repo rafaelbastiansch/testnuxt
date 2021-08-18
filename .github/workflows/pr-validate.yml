@@ -11,4 +11,4 @@ jobs:
     steps:
     - uses: rafaelbastiansch/labeler@v0.0.4
       with:
-        repo-token: "${{ secrets.GITHUB_TOKE }}"
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
