@@ -1,0 +1,12 @@
+name: Mergeability
+on:
+  pull_request_review:
+    types: [submitted]
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: rafaelbastiansch/mergeability-pr@v1.0.0
+    - name: echo status
+      run: |
+          echo ${{ toJSON(github.event) }}
