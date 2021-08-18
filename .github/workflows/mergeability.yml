@@ -9,6 +9,3 @@ jobs:
     - uses: rafaelbastiansch/mergeability-action@1.0.0
       with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
-    - name: echo status
-      run: |
-          echo ${{ toJSON(github.event) }}
