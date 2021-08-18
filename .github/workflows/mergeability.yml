@@ -6,7 +6,4 @@ jobs:
   teste:
     runs-on: ubuntu-latest
     steps:
-    - uses: rafaelbastiansch/mergeability-action@1.0.0
-    - name: echo status
-      run: |
-          echo ${{ toJSON(github.event) }}
+    - uses: rafaelbastiansch/mergeability-action@1.0.1
